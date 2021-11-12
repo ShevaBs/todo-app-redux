@@ -1,0 +1,26 @@
+.add-btn {
+  position: absolute;
+  z-index: 9;
+  cursor: pointer;
+  box-shadow: 0 0 4px 1px var(--btncolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btncolor);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:hover {
+    box-shadow: 0 0 5px 2px var(--btncolor); 
+  }
+
+  .MuiSvgIcon-root {
+    color: #fff;
+  }
+
+}

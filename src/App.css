@@ -2,10 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --primary: #0e387a;
+  --btncolor: #0084FF;
+  scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(156,154,154,1) 0%, rgba(129,125,125,1) 50%, rgba(156,154,154,1) 100%);
 }
 
 body {
   font-family: Roboto ,sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 .app {
@@ -14,11 +34,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .todo-wrapper {
+  position: relative;
   width: 450px;
-  box-shadow: 1px 1px 4px 2px whitesmoke;
-  border-radius: 12px;
-  padding: 2rem 1rem;
+  box-shadow: 1px 1px 4px 5px whitesmoke;
+  border-radius: 16px;
+  padding: 2rem 1rem 4rem;
+  z-index: 1;
 }
